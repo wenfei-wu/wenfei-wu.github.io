@@ -1,0 +1,37 @@
+<HTML>
+   <HEAD>
+      <TITLE>Homepage of Wenfei Wu</TITLE>
+<style type="text/css">
+.body_div {width:70em; margin-left:auto; margin-right:auto}
+</style>
+   </HEAD>
+<BODY >
+<div class="body_div">
+  <h3>Note: Click the <font color="red">"Month/Week/Day"</font> on the right top corner to get a better view.</h3>
+  <embed style="width:70em; height:35em;" border="5" src="https://outlook.live.com/owa/calendar/ecb8403a-5569-4e5a-9eac-c1c14a30df94/a964dfc6-7b08-4ed5-946b-f08c8728d039/cid-505BC60186A42DCB/index.html">
+  <br><b>NetLab@IIIS Members:</b> Please update your event directly in the shared calendar.
+  <br><b>Non-Members:</b> Make your appointment in the following form.
+  <br>
+<form method="post" action="http://123.56.112.58:9090/submit" target="_blank">
+  <br>
+  <table border="2">
+    <tr><td><label>Event Name:&nbsp;&nbsp;</label><input type="text" name="EventName" size="50"/></td>
+      <td><label>Location:&nbsp;&nbsp;</label><input type="text" name="Location" size="25"/></td></tr>
+    <tr><td><label>People:&nbsp;&nbsp;</label><input type="text" name="People" size="40"/></td>
+      <td><label>Contact Email:&nbsp;&nbsp;</label><input type="text" name="Email" size="20"/></td></tr>
+    <tr><td colspan="2"><label>Date:&nbsp;</label><input type="date" name="Date"/>
+      <label>Start Time:&nbsp;</label><input type="time" name="StartTime"/>
+      <label>End Time:&nbsp;</label><input type="time" name="EndTime"/>&nbsp; (AM for morning, PM for afternoon)</td>
+      </tr>
+    <tr><td colspan="2"><label>Comments:</label> <br>
+    <textarea name="Comments" cols="100" rows="10">Any details here.</textarea></td>
+      <td></td></tr>
+  </table>
+  <input type="submit" name="action" value="ScheduleEvent"/>&nbsp;
+  <!-- <font color="red"> Submit here! </font> -->
+  with passcode <input type="text" name="Passcode"/><br>
+  <font color="red">(if you have a passcode, the request would be committed; otherwise, reviewed)</font>
+</form>
+</div>
+</BODY>
+</HTML>
