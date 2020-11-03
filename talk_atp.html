@@ -1,0 +1,55 @@
+<HTML>
+   <HEAD>
+      <TITLE>Aggregation Transmission Protocol</TITLE>
+<style type="text/css">
+.body_div {width:50em; margin-left:auto; margin-right:auto}
+</style>
+   </HEAD>
+<BODY>
+<div class="body_div">
+
+<!-------------------------------------------------------------------------------------------->
+<table cellpadding="20em">
+<tr>
+<td><img src="figs/talk_pic.jpg" height=200em></td>
+<td align="top">
+<h1>Wenfei Wu</h1>
+<h3>Assistant Professor<br>
+IIIS, Tsinghua University</h3>
+<img src="figs/email.png" height=40em>
+</td>
+<td><br><br>
+  &nbsp;&nbsp;Wechat ID<br>
+  <img src="figs/Enterprise.png" height=100em>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+Here is my <a href="index.html">homepage</a>.
+
+<h3>Bio</h3>
+Wenfei Wu is an assistant professor at the Institute for Interdisciplinary Information Sciences (IIIS) in Tsinghua University. Dr. Wu got his Ph.D. from the University of Wisconsin-Madison in 2015, and his research interest is in networked systems. Dr. Wu has published 28 papers on top-tier conferences and transactions, including ToN, SIGCOMM, NSDI, CoNEXT, SoCC, IMC, etc. His Ph.D. work is about virtual network diagnosis, which was awarded the best student paper in SoCC'13. His work on 5G transport layer design was also awarded the best paper runner-up in IPCCC'19. Recently, Dr. Wu is building infrastructures for machine learning systems. His recent programmable switch accelerated machine learning system got a one-shot revision in NSDI'21 spring and would be released soon.
+
+<h3>Abstract</h3>
+In Deep Neural Network (DNN), the size of the model and dataset are increasing, and the DNN training tends to be implemented in a distributed architecture. The PS-worker architecture for DNN systems suffers from the traffic incast problem, where many workers exchange traffic with the PS, causing the PS to be the bottleneck. Inspired by the recent progress in programmable switches, we propose an Aggregation Transmission Protocol (ATP), which supports multi-tenant and multi-rack in-network aggregation for DNN training. ATP consists of the networking stack on end hosts and the aggregation service on switches. The switch allocates its computation resources to jobs in a decentralized manner. The end host networking stack has a fallback to complement the switch's corner-case incapability(e.g., overflow, packet loss) and congestion control to share network resources. Finally, we made a bunch of engineering optimizations to make ATP saturate the high-bandwidth network (100Gbps). We wrap up ATP as a primitive in the transport layer and integrate it with ML systems, and show that ATP can provide both performance gain and correctness to typical DNN training (e.g., AlexNet, VGG, ResNet).
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-44199113-1', 'auto');
+         ga('send', 'pageview');
+</script>
+<div align='center'><a href="http://www.clustrmaps.com/map/wenfei-wu.github.io" title="Visitor Map for wenfei-wu.github.io"><img src="//www.clustrmaps.com/map_v2.png?u=uGL4&d=JWCQENT5aNR-hUEhTEdeSPFXz_WNb7TBM2tIfyyunwo" /></a></div>
+<div align='center'><a href='http://www.hit-counts.com'><img src='http://www.hit-counts.com/counter.php?t=MTI3NzA0MA==' border='0' alt='Visitor Counter'></a></div>
+<div align='center'>since 2010</div>
+
+</div>
+</BODY>
+</HTML>
