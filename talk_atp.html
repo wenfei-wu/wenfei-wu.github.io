@@ -32,6 +32,10 @@ Here is my <a href="index.html">homepage</a>.
 <h3>Bio</h3>
 Wenfei Wu is an assistant professor at the Institute for Interdisciplinary Information Sciences (IIIS) in Tsinghua University. Dr. Wu got his Ph.D. from the University of Wisconsin-Madison in 2015, and his research interest is in networked systems. Dr. Wu has published 28 papers on top-tier conferences and transactions, including ToN, SIGCOMM, NSDI, CoNEXT, SoCC, IMC, etc. His Ph.D. work is about virtual network diagnosis, which was awarded the best student paper in SoCC'13. His work on 5G transport layer design was also awarded the best paper runner-up in IPCCC'19. Recently, Dr. Wu is building infrastructures for machine learning systems. His recent programmable switch accelerated machine learning system got a one-shot revision in NSDI'21 spring and would be released soon.
 
+
+<h3>Title</h3>
+ATP: In-Network Aggregation for Multi-Tenant Training
+
 <h3>Abstract</h3>
 In Deep Neural Network (DNN), the size of the model and dataset are increasing, and the DNN training tends to be implemented in a distributed architecture. The PS-worker architecture for DNN systems suffers from the traffic incast problem, where many workers exchange traffic with the PS, causing the PS to be the bottleneck. Inspired by the recent progress in programmable switches, we propose an Aggregation Transmission Protocol (ATP), which supports multi-tenant and multi-rack in-network aggregation for DNN training. ATP consists of the networking stack on end hosts and the aggregation service on switches. The switch allocates its computation resources to jobs in a decentralized manner. The end host networking stack has a fallback to complement the switch's corner-case incapability(e.g., overflow, packet loss) and congestion control to share network resources. Finally, we made a bunch of engineering optimizations to make ATP saturate the high-bandwidth network (100Gbps). We wrap up ATP as a primitive in the transport layer and integrate it with ML systems, and show that ATP can provide both performance gain and correctness to typical DNN training (e.g., AlexNet, VGG, ResNet).
 
