@@ -39,6 +39,25 @@
 <h3>摘要</h3>
 随着机器学习数据集和模型的增大，机器学习的训练过程逐步被分布式部署到多服务器上，其中多worker向参数服务器PS交换梯度、更新模型的计算方式是一种典型的体系结构。但是，在这种体系结构下，PS容易成为通信瓶颈。我们设计了聚合传输协议ATP来解决这一瓶颈，同时支持在数据中心中的多租户多机柜部署。ATP利用最近的可编程交换机技术，将参数聚合的过程卸载到交换机上，从而减小了PS的网络流量和计算量。ATP协议包括交换机上的网内聚合计算服务、终端服务器的可靠传输、和高吞吐网卡的加速技术。我们将ATP对接PyTorch并在AlexNet、VGG等常用模型上进行测试，证明ATP能够有效的加速机器学习的效率。
 
+<h3>讲座记录</h3>
+   <ol>
+      <li>10/29/2020 Nanyang Technological University</li>
+      <li>11/03/2020 Kwai Inc.</li>
+      <li>11/09/2020 La Trobe University</li>
+      <li>11/10/2020 Peking University</li>
+      <li>11/11/2020 Shanghai Jiao Tong University</li>
+      <li>11/12/2020 Chinese Academy of Science</li>
+      <li>11/12/2020 University of Sydney</li>
+      <li>11/17/2020 Huawei Inc.</li>
+      <li>11/18/2020 Tsinghua University</li>
+      <li>11/27/2020 Microsoft Research Asia</li>
+      <li>12/07/2020 Hangzhou Innovation Institute, Beihang University</li>
+      <li>12/08/2020 Zhejiang University</li>
+      <li>12/09/2020 Westlake University</li>
+      <li>12/19/2020 Hong Kong University of Science and Technology</li>
+   </ol>
+   
+   
 <br>
 <br>
 <h3>日历</h3>
